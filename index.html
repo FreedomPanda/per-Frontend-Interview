@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Per-fe-interview by Docyue</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Per-fe-interview</h1>
+        <p>自己整理的前端面试题，欢迎指正，仅供参考！</p>
+
+        <p class="view"><a href="https://github.com/Docyue/per-FE-Interview">View the Project on GitHub <small>Docyue/per-FE-Interview</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/Docyue/per-FE-Interview/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/Docyue/per-FE-Interview/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/Docyue/per-FE-Interview">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="per-fe-interview" class="anchor" href="#per-fe-interview" aria-hidden="true"><span class="octicon octicon-link"></span></a>per-FE-Interview</h1>
+
+<p>自己整理的前端面试题问题大纲，主要分三大部分html,css,js  </p>
+
+<h2>
+<a id="html部分" class="anchor" href="#html%E9%83%A8%E5%88%86" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="">html部分</a>
+</h2>
+
+<p>1、<a href="#Doctype%E4%BD%9C%E7%94%A8%EF%BC%9F%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F%E4%B8%8E%E6%B7%B7%E6%9D%82%E6%A8%A1%E5%BC%8F%E5%A6%82%E4%BD%95%E5%8C%BA%E5%88%86%EF%BC%9F%E5%AE%83%E4%BB%AC%E6%9C%89%E4%BD%95%E6%84%8F%E4%B9%89?">Doctype作用？严格模式与混杂模式如何区分？它们有何意义?</a><br>
+2、<a href="#%E6%96%87%E6%9C%AC%E6%B5%81%E7%9B%92%E6%96%87%E6%A1%A3%E6%B5%81">文本流和文档流</a><br>
+3、<a href="#%E4%BB%80%E4%B9%88%E6%98%AFweb%E8%AF%AD%E4%B9%89%E5%8C%96,%E6%9C%89%E4%BB%80%E4%B9%88%E5%A5%BD%E5%A4%84">什么是web语义化,有什么好处</a><br>
+4、<a href="#%60%3Cimg%3E%60%E7%9A%84title%E5%92%8Calt%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB"><code>&lt;img&gt;</code>的title和alt有什么区别</a><br>
+5、<a href="#%E8%A1%8C%E5%86%85%E5%85%83%E7%B4%A0%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E5%9D%97%E7%BA%A7%E5%85%83%E7%B4%A0%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E7%A9%BA%E5%85%83%E7%B4%A0%E6%9C%89%E9%82%A3%E4%BA%9B%EF%BC%9F">行内元素有哪些？块级元素有哪些？空(void)元素有那些？</a><br>
+6、<a href="#%E9%A1%B5%E9%9D%A2%E5%AF%BC%E5%85%A5%E6%A0%B7%E5%BC%8F%E6%97%B6%EF%BC%8C%E4%BD%BF%E7%94%A8link%E5%92%8C@import%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F">页面导入样式时，使用link和@import有什么区别？</a><br>
+7、<a href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E6%A0%B8%E5%B7%AE%E5%BC%82">浏览器内核差异</a><br>
+8、<a href="#html5%E6%9C%89%E5%93%AA%E4%BA%9B%E6%96%B0%E7%89%B9%E6%80%A7%E3%80%81%E7%A7%BB%E9%99%A4%E4%BA%86%E9%82%A3%E4%BA%9B%E5%85%83%E7%B4%A0%EF%BC%9F%E5%A6%82%E4%BD%95%E5%A4%84%E7%90%86HTML5%E6%96%B0%E6%A0%87%E7%AD%BE%E7%9A%84%E6%B5%8F%E8%A7%88%E5%99%A8%E5%85%BC%E5%AE%B9%E9%97%AE%E9%A2%98%EF%BC%9F%E5%A6%82%E4%BD%95%E5%8C%BA%E5%88%86HTML%E5%92%8CHTML5%EF%BC%9F">html5有哪些新特性、移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？如何区分HTML和HTML5？</a><br>
+9、<a href="#HTML5%E7%9A%84%E7%A6%BB%E7%BA%BF%E5%82%A8%E5%AD%98%E6%80%8E%E4%B9%88%E7%94%A8%EF%BC%8C%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E8%83%BD%E4%B8%8D%E8%83%BD%E8%A7%A3%E9%87%8A%E4%B8%80%E4%B8%8B%EF%BC%9F">HTML5的离线储存怎么用，工作原理能不能解释一下？</a><br>
+10、<a href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%AF%E6%80%8E%E4%B9%88%E5%AF%B9HTML5%E7%9A%84%E7%A6%BB%E7%BA%BF%E5%82%A8%E5%AD%98%E8%B5%84%E6%BA%90%E8%BF%9B%E8%A1%8C%E7%AE%A1%E7%90%86%E5%92%8C%E5%8A%A0%E8%BD%BD%E7%9A%84%E5%91%A2%EF%BC%9F">浏览器是怎么对HTML5的离线储存资源进行管理和加载的呢？</a><br>
+11、<a href="#%E8%AF%B7%E6%8F%8F%E8%BF%B0%E4%B8%80%E4%B8%8Bcookies,sessionStorage%E5%92%8ClocalStorage%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F">请描述一下cookies,sessionStorage和localStorage的区别？</a><br>
+12、<a href="#iframe%E6%9C%89%E9%82%A3%E4%BA%9B%E7%BC%BA%E7%82%B9%EF%BC%9F">iframe有那些缺点？</a><br>
+13、<a href="#%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%B5%8F%E8%A7%88%E5%99%A8%E5%86%85%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE%E9%A1%B5%E4%B9%8B%E9%97%B4%E7%9A%84%E9%80%9A%E4%BF%A1?">如何实现浏览器内多个标签页之间的通信? </a><br>
+14、<a href="#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8websocket%EF%BC%9F%E5%A6%82%E4%BD%95%E5%85%BC%E5%AE%B9%E4%BD%8E%E6%B5%8F%E8%A7%88%E5%99%A8%EF%BC%9F">如何使用websocket？如何兼容低浏览器？</a><br>
+15、<a href="#%E9%A1%B5%E9%9D%A2%E5%8F%AF%E8%A7%81%E6%80%A7(PageVisibility)API%E5%8F%AF%E4%BB%A5%E6%9C%89%E5%93%AA%E4%BA%9B%E7%94%A8%E9%80%94%EF%BC%9F">页面可见性(PageVisibility)API可以有哪些用途？</a><br>
+xx、<a href="#"></a>  </p>
+
+<hr>
+
+<h2>
+<a id="css部分" class="anchor" href="#css%E9%83%A8%E5%88%86" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="">CSS部分</a>
+</h2>
+
+<p>1、<a href="#%E4%BB%8B%E7%BB%8D%E4%B8%80%E4%B8%8B%E6%A0%87%E5%87%86%E7%9A%84CSS%E7%9A%84%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B%EF%BC%9F%E4%B8%8EIE%E7%9A%84%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B%E6%9C%89%E4%BB%80%E4%B9%88%E4%B8%8D%E5%90%8C%E7%9A%84%EF%BC%9F">介绍一下标准的CSS的盒子模型？与IE的盒子模型有什么不同的？</a><br>
+2、<a href="#display%E6%9C%89%E5%93%AA%E4%BA%9B%E5%80%BC%EF%BC%9F%E8%AF%B4%E6%98%8E%E4%BB%96%E4%BB%AC%E7%9A%84%E4%BD%9C%E7%94%A8%E3%80%82position%E7%9A%84%E5%80%BCrelative%E5%92%8Cabsolute%E5%AE%9A%E4%BD%8D%E5%8E%9F%E7%82%B9%E6%98%AF%EF%BC%9F">display有哪些值？说明他们的作用。position的值relative和absolute定位原点是？</a><br>
+3、<a href="#%E7%94%A8%E7%BA%AFCSS%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E4%B8%89%E8%A7%92%E5%BD%A2%E7%9A%84%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F">用纯CSS创建一个三角形的原理是什么？</a><br>
+4、<a href="#%E4%B8%80%E4%B8%AA%E6%BB%A1%E5%B1%8F%E5%93%81%E5%AD%97%E5%B8%83%E5%B1%80%E5%A6%82%E4%BD%95%E8%AE%BE%E8%AE%A1?">一个满屏品字布局如何设计?</a><br>
+5、<a href="#li%E4%B8%8Eli%E4%B9%8B%E9%97%B4%E6%9C%89%E7%9C%8B%E4%B8%8D%E8%A7%81%E7%9A%84%E7%A9%BA%E7%99%BD%E9%97%B4%E9%9A%94%E6%98%AF%E4%BB%80%E4%B9%88%E5%8E%9F%E5%9B%A0%E5%BC%95%E8%B5%B7%E7%9A%84%EF%BC%9F%E6%9C%89%E4%BB%80%E4%B9%88%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%EF%BC%9F">li与li之间有看不见的空白间隔是什么原因引起的？有什么解决办法？</a><br>
+6、<a href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%88%9D%E5%A7%8B%E5%8C%96CSS%E6%A0%B7%E5%BC%8F">为什么要初始化CSS样式</a><br>
+7、<a href="#absolute%E7%9A%84containingblock%E8%AE%A1%E7%AE%97%E6%96%B9%E5%BC%8F%E8%B7%9F%E6%AD%A3%E5%B8%B8%E6%B5%81%E6%9C%89%E4%BB%80%E4%B9%88%E4%B8%8D%E5%90%8C%EF%BC%9F">absolute的containing\block计算方式跟正常流有什么不同？</a><br>
+8、<a href="#%E5%AF%B9BFC%E8%A7%84%E8%8C%83%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F">对BFC规范的理解？</a><br>
+9、<a href="#CSS%E9%87%8C%E7%9A%84visibility%E5%B1%9E%E6%80%A7%E6%9C%89%E4%B8%AAcollapse%E5%B1%9E%E6%80%A7%E5%80%BC%E6%98%AF%E5%B9%B2%E5%98%9B%E7%94%A8%E7%9A%84%EF%BC%9F%E5%9C%A8%E4%B8%8D%E5%90%8C%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%8B%E4%BB%A5%E5%90%8E%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F">CSS里的visibility属性有个collapse属性值是干嘛用的？在不同浏览器下以后什么区别？</a><br>
+10、<a href="#CSS%E6%9D%83%E9%87%8D%E4%BC%98%E5%85%88%E7%BA%A7%E6%98%AF%E5%A6%82%E4%BD%95%E8%AE%A1%E7%AE%97%E7%9A%84%EF%BC%9F">CSS权重优先级是如何计算的？</a><br>
+11、<a href="#%E8%AF%B7%E8%A7%A3%E9%87%8A%E4%B8%80%E4%B8%8B%E6%B5%AE%E5%8A%A8%E5%92%8C%E5%AE%83%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%EF%BC%9F%E6%B8%85%E9%99%A4%E6%B5%AE%E5%8A%A8%E7%9A%84%E6%8A%80%E5%B7%A7">请解释一下浮动和它的工作原理？清除浮动的技巧</a><br>
+12、<a href="#%E7%A7%BB%E5%8A%A8%E7%AB%AF%E7%9A%84%E5%B8%83%E5%B1%80%E7%94%A8%E8%BF%87%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2%E5%90%97%EF%BC%9F">移动端的布局用过媒体查询吗？</a><br>
+13、<a href="#CSS%E4%BC%98%E5%8C%96%E3%80%81%E6%8F%90%E9%AB%98%E6%80%A7%E8%83%BD%E7%9A%84%E6%96%B9%E6%B3%95%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F">CSS优化、提高性能的方法有哪些？</a><br>
+14、<a href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%AF%E6%80%8E%E6%A0%B7%E8%A7%A3%E6%9E%90CSS%E9%80%89%E6%8B%A9%E5%99%A8%E7%9A%84%EF%BC%9F">浏览器是怎样解析CSS选择器的？</a><br>
+15、<a href="#%E5%9C%A8%E7%BD%91%E9%A1%B5%E4%B8%AD%E7%9A%84%E5%BA%94%E8%AF%A5%E4%BD%BF%E7%94%A8%E5%A5%87%E6%95%B0%E8%BF%98%E6%98%AF%E5%81%B6%E6%95%B0%E7%9A%84%E5%AD%97%E4%BD%93%EF%BC%9F%E4%B8%BA%E4%BB%80%E4%B9%88%E5%91%A2%EF%BC%9F">在网页中的应该使用奇数还是偶数的字体？为什么呢？</a><br>
+16、<a href="#margin%E5%92%8Cpadding%E5%88%86%E5%88%AB%E9%80%82%E5%90%88%E4%BB%80%E4%B9%88%E5%9C%BA%E6%99%AF%E4%BD%BF%E7%94%A8%EF%BC%9F">margin和padding分别适合什么场景使用？</a><br>
+17、<a href="#%E5%85%83%E7%B4%A0%E7%AB%96%E5%90%91%E7%9A%84%E7%99%BE%E5%88%86%E6%AF%94%E8%AE%BE%E5%AE%9A%E6%98%AF%E7%9B%B8%E5%AF%B9%E4%BA%8E%E5%AE%B9%E5%99%A8%E7%9A%84%E9%AB%98%E5%BA%A6%E5%90%97%EF%BC%9F">元素竖向的百分比设定是相对于容器的高度吗？</a><br>
+18、<a href="#%E5%85%A8%E5%B1%8F%E6%BB%9A%E5%8A%A8%E7%9A%84%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E7%94%A8%E5%88%B0%E4%BA%86CSS%E7%9A%84%E9%82%A3%E4%BA%9B%E5%B1%9E%E6%80%A7%EF%BC%9F">全屏滚动的原理是什么？用到了CSS的那些属性？</a><br>
+19、<a href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1%EF%BC%9F%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1%E7%9A%84%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%E5%A6%82%E4%BD%95%E5%85%BC%E5%AE%B9%E4%BD%8E%E7%89%88%E6%9C%AC%E7%9A%84IE%EF%BC%9F">什么是响应式设计？响应式设计的基本原理是什么？如何兼容低版本的IE？</a><br>
+20、<a href="#%E4%BB%80%E4%B9%88%E6%98%AF%E4%BC%AA%E5%85%83%E7%B4%A0%EF%BC%8C%E4%BB%80%E4%B9%88%E6%98%AF%E4%BC%AA%E7%B1%BB%EF%BC%9F,%E4%BB%96%E4%BB%AC%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F">什么是伪元素，什么是伪类？,他们的区别是什么？</a><br>
+21、<a href="#%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9chrome%E8%AE%B0%E4%BD%8F%E5%AF%86%E7%A0%81%E5%90%8E%E8%87%AA%E5%8A%A8%E5%A1%AB%E5%85%85%E8%A1%A8%E5%8D%95%E7%9A%84%E9%BB%84%E8%89%B2%E8%83%8C%E6%99%AF%EF%BC%9F">如何修改chrome记住密码后自动填充表单的黄色背景？</a><br>
+22、<a href="#%E4%BD%A0%E5%AF%B9line-height%E6%98%AF%E5%A6%82%E4%BD%95%E7%90%86%E8%A7%A3%E7%9A%84%EF%BC%9F">你对line-height是如何理解的？</a><br>
+23、<a href="#fixed%E5%9C%A8android%E4%B8%8B%E6%97%A0%E6%95%88%E6%80%8E%E4%B9%88%E5%A4%84%E7%90%86%EF%BC%9F"><code>position:fixed;</code>在android下无效怎么处理？</a><br>
+24、<a href="#inline-block%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E4%BC%9A%E6%98%BE%E7%A4%BA%E9%97%B4%E9%9A%99?"><code>display:inline-block;</code>什么时候会显示间隙?</a><br>
+25、<a href="#scroll%E6%97%B6%E4%B8%8D%E8%83%BD%E5%B9%B3%E6%BB%91%E6%BB%9A%E5%8A%A8%E7%9A%84%E9%97%AE%E9%A2%98%E6%80%8E%E4%B9%88%E5%A4%84%E7%90%86%EF%BC%9F"><code>overflow:scroll;</code>时不能平滑滚动的问题怎么处理？</a><br>
+26、<a href="#%E6%80%8E%E4%B9%88%E8%AE%A9Chrome%E6%94%AF%E6%8C%81%E5%B0%8F%E4%BA%8E12px;%E7%9A%84%E6%96%87%E5%AD%97%EF%BC%9F">怎么让Chrome支持小于12px;的文字？</a><br>
+27、<a href="#CSS3%E6%9C%89%E5%93%AA%E4%BA%9B%E6%96%B0%E7%89%B9%E6%80%A7%EF%BC%88%E5%8C%85%E5%90%AB%E5%93%AA%E4%BA%9B%E6%A8%A1%E5%9D%97%EF%BC%89%EF%BC%9F">CSS3有哪些新特性（包含哪些模块）？</a><br>
+28、<a href="#%E8%AF%B7%E8%A7%A3%E9%87%8A%E4%B8%80%E4%B8%8BCSS3%E7%9A%84Flexbox%EF%BC%88%E5%BC%B9%E6%80%A7%E7%9B%92%E5%B8%83%E5%B1%80%E6%A8%A1%E5%9E%8B%EF%BC%89,%E4%BB%A5%E5%8F%8A%E9%80%82%E7%94%A8%E5%9C%BA%E6%99%AF%EF%BC%9F">请解释一下CSS3的Flexbox（弹性盒布局模型）,以及适用场景？</a><br>
+29、<a href="#IE%E5%90%84%E4%B8%AA%E7%89%88%E6%9C%AC%E5%85%BC%E5%AE%B9%E6%80%A7%E5%8F%8Ahack">IE各个版本兼容性及hack</a><br>
+xx、<a href="#"></a>  </p>
+
+<hr>
+
+<h2>
+<a id="javascript部分" class="anchor" href="#javascript%E9%83%A8%E5%88%86" aria-hidden="true"><span class="octicon octicon-link"></span></a>JavaScript部分</h2>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/Docyue">Docyue</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
